@@ -7,7 +7,7 @@
 header {
     width: 100%;
     height: 100vh;
-
+    position: relative;
 }
 nav{
     display: flex;
@@ -27,5 +27,64 @@ nav{
     font-size: 1.2rem;
     color: black;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 10px 20px ;
+}
+
+.circle {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    z-index: -1;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.left{
+    flex-basis: 60%;
+    max-width: 450px;
+}
+.right{
+    flex-basis: 40%;
+    text-align: right;
+}
+.right img {
+    width: 70%;
+}
+
+.left h1{
+    font-size: 3rem;
+}
+.left span{
+    color: #7f8fa6
+}
+.p-header{
+    margin-top: 1rem;
+}
+
+.btn{
+    margin-top: 2rem;
+}
+
+.btn input {
+    width: 75%;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    border: 1px solid grey;
+    outline: none;
+}
+.btn button{
+    padding: 0.6rem;
+    color: white;
+    background-color: #7f8fa6;
+    border: none;
+    outline: none;
+    border-radius: 0.6rem;
 }
